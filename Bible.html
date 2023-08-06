@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bible_NotePad</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./Bible.css">
+    </head>
+    <body>
+      <div id = "main">
+        <nav id="navBar">
+            <ul>
+                <li>Bible NotePad</li>
+            </ul>
+        </nav>
+        <section id="carousel-container" class="read">
+          <h1 id="dailyVerse">Verse of the Day</h1>
+          <div class="text-card">
+              <p id="random"> Romans 8:38-39 ESV
+                  For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.</p>
+          </div>
+        </section>
+        <section class="read">
+          <div class="content">
+            <h2 class="headings">Select your Bible Content</h2>
+            <hr>
+            <div id="containers">
+              <div id="formArea" class="cards">
+                  <form id="search" class="content">
+                    <label class="name"> Book : <input id="searchinput" class="searchbar" type="text"></label>
+                    <label class="name"> Chapter : <input id="chapter" class="searchbar" type="number"></label>
+                    <label class="name"> Verse : <input id="verse" class="searchbar" type="number"></label>
+                    <input type="submit" placeholder="search" class="btn">
+                  </form>
+              </div>
+              <div id="contentArea" class="cards">
+                <p id="bibleContent"> This is where your Reference Verses are displayed</p>
+                <q id="quotedVerse">This is where your Quoted Scrpture Verses are displayed</q>
+              </div>
+              <div id="img-card">
+              <img src="./Images/daiga-ellaby-h43VqtlnV7U-unsplash.jpg" alt="Pious Image">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="read">
+          <div id="lastContent" class="content">
+            <h2 class="headings">Write your Thoughts & Take Aways!</h2>
+            <form id="submitForm">
+              <textarea id="formpad" type="text" placeholder="Write here!" form="submitForm">TakeAway Notes Here</textarea>
+              <input type="submit" class="button" value="save">
+            </form>
+          </div>
+        </section>
+        <footer>
+            <address>
+                <label for="email">Email Me :</label>
+                <p id="email">michael.njogu1@student.moringaschool.com</p>
+                <label for="phoneNumber">Contact Me :</label>
+                <p>+254708380360</p>
+            </address>
+        </footer>
+        </div>
+        
+        <script src="./index.js" async></script>
+    </body>
+</html>

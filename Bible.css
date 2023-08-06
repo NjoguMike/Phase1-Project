@@ -1,0 +1,184 @@
+#main{
+    display: flex;
+    flex-direction: column;
+}
+#navBar{
+    position: sticky;
+    margin-top: -10px;
+    width: 100%;
+    background-color: rgb(118, 172, 30);
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+    font-size: 30px;
+    z-index: 1;
+    top: 0;
+}
+#navBar ul{
+    list-style-type: none;
+}
+.read{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px 30px 5px 30px;
+    width: auto;
+    height: 800px;
+}
+#carousel-container{
+    display: flex;
+    flex-direction: column;
+    background-image:url(./Images/marjhon-obsioma-lkPiwOlWWfo-unsplash.jpg);
+    background-size: cover;
+    margin: 0px -8px 0px -8px;
+    height: 800px;
+}
+h1{
+    font-size: 28px;
+    margin-left: 20%;
+    color: rgb(227, 234, 239);
+}
+.headings{
+    color: rgba(55, 54, 54, 0.926);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 30px;
+    text-align: center;
+    font-size: 24px;
+}
+.text-card{
+    float: left;
+    margin-left: 10%;
+    padding: 10px 40px 20px 40px;
+    border-radius: 10px;
+    background: rgba(63, 62, 62, 0.289);
+    font-weight: bold;
+    color: rgb(218, 228, 228);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    width: 25%;
+}
+hr{
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#containers{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 30px 15px 30px;
+    justify-content: space-evenly;
+}
+#formArea{
+    top: 30%;
+    left: -10%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+#contentArea{
+    margin-right: 40px;
+    position: relative;
+    top: 30%;
+    height: 300px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(85, 84, 84);
+    text-align: justify;
+    padding: 15px 30px 15px 30px;
+    border-radius: 6px;
+    background-color: rgba(143, 219, 21, 0.221);
+}
+img{
+    position: relative;
+    top: 10%;
+    left: 30%;
+    height: 500px;
+    border-radius: 5px;
+    width: 300px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px 20px;
+}
+#formpad{
+    color: rgba(52, 52, 52, 0.975);
+    font-size: 16px;
+    border: solid 2.8px rgb(227, 225, 225);
+    box-shadow: 8px 8px 30px 0.1em rgb(154, 152, 152);
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    margin: 60px 20px 30px 10px;
+    padding: 30px 20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(62, 62, 61, 0.76);
+    box-sizing: border-box;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 10px;
+}
+.searchbar{
+    float: right;
+    padding: 5px 10px;
+}
+.btn{
+    padding: 5px 25px 5px 25px;
+    margin: 12px 10px 0px 15px;
+    color: rgb(33, 32, 32);
+    width: 100px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(155, 209, 30, 0.952);
+
+}
+.btn:hover{
+    color: white;
+    padding: 5px 25px 5px 25px;
+    margin: 12px 10px 0px 15px;;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(155, 209, 30, 0.952);
+}
+.button{
+    color: rgb(57, 56, 56);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(155, 209, 30, 0.952);
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 8px 20px;
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+}
+.button:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 8px 20px;
+    position: relative;
+    left: 50%;
+}
+footer{
+    margin: -10px -10px;
+    padding: 20px 30px 20px 50px;
+    background-color: rgba(39, 38, 38, 0.825);
+    color: rgb(227, 232, 237);
+    height: 200px;
+}
