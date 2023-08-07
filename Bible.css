@@ -18,15 +18,15 @@
     list-style-type: none;
 }
 .read{
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     justify-content: space-evenly;
     padding: 5px 30px 5px 30px;
-    width: auto;
+    width: 100%;
     height: 800px;
 }
 #carousel-container{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     background-image:url(./Images/marjhon-obsioma-lkPiwOlWWfo-unsplash.jpg);
     background-size: cover;
@@ -62,7 +62,7 @@ hr{
     margin-top: 10px;
     margin-bottom: 30px;
 }
-#containers{
+.containers{
     display: flex;
     flex-direction: row;
     padding: 15px 30px 15px 30px;
@@ -72,7 +72,7 @@ hr{
     top: 30%;
     width: auto;
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: left;
 }
 #contentArea{
@@ -100,6 +100,19 @@ img{
     display: flex;
     flex-direction: column;
     padding: 20px 20px 40px 20px;
+}
+#submitForm{
+    margin: 20px 20px 20px 40px;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+}
+.read div #notes{
+    background-color: rgba(89, 164, 13, 0.525);
+    margin: 20px 40px 20px 30px;
+    padding: 20px 20px 40px 20px;
+    border-radius: 5px;
+    width: 400px;
 }
 #formpad{
     color: rgba(52, 52, 52, 0.975);

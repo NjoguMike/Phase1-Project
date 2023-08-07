@@ -79,35 +79,12 @@ function contentDisplay(event){
 const form = document.getElementById("search").addEventListener('submit',contentDisplay)
 
 
-//Data to Store
-const localDb = "./formdata.json"
-    
+//Data to Store 
 const formHandler = (event)=>{
     event.preventDefault()
 
-    const notes = document.getElementById('formpad').value
-    const userData = {
-        id: "",
-        takeAway: notes,
-    }
-
-    const postData = {
-        method: "POST",
-        headers: {
-            "content-type":"application/json",
-            "Accept":"application/json"
-        },
-        body: JSON.stringify(userData)
-        }
-
-    fetch(localDb,postData)
-        .then(response => response.json())
-        .then(resData => console.log(resData))
-        .catch(error => {
-            alert("Internal Server Error!")
-            console.log(error.message)
-        })
-        console.log(postData)
+    const savedNotes= document.getElementById('notes')
+    savedNotes.innerHTML = `<p> ${document.getElementById('formpad').value} </p>`
 
 }
 

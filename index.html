@@ -24,16 +24,15 @@
           </div>
         </section>
         <section class="read">
-          <div class="content">
             <h2 class="headings">Select your Bible Content</h2>
             <hr>
-            <div id="containers">
+            <div class="containers">
               <div id="formArea" class="cards">
                   <form id="search" class="content">
                     <label class="name"> Book : <input id="searchinput" class="searchbar" type="text"></label>
                     <label class="name"> Chapter : <input id="chapter" class="searchbar" type="number"></label>
                     <label class="name"> Verse : <input id="verse" class="searchbar" type="number"></label>
-                    <input type="submit" placeholder="search" class="btn">
+                    <input type="submit" class="btn">
                   </form>
               </div>
               <div id="contentArea" class="cards">
@@ -44,22 +43,22 @@
               <img src="./Images/daiga-ellaby-h43VqtlnV7U-unsplash.jpg" alt="Pious Image">
               </div>
             </div>
-          </div>
         </section>
         <section class="read">
-          <div id="lastContent" class="content">
             <h2 class="headings">Write your Thoughts & Take Aways!</h2>
-            <form id="submitForm">
-              <textarea id="formpad" type="text" placeholder="Write here!" form="submitForm">TakeAway Notes Here</textarea>
-              <input type="submit" class="button" value="save">
-            </form>
-          </div>
+            <div class="containers">
+              <form id="submitForm">
+                <textarea id="formpad" placeholder="Write here!" form="submitForm">TakeAway Notes Here</textarea>
+                <input type="submit" class="button" value="save">
+              </form>
+              <div id="notes"><p>Notes 1</p></div>
+            </div>
         </section>
         <footer>
             <address>
-                <label for="email">Email Me :</label>
+                <label>Email Me :</label>
                 <p id="email">michael.njogu1@student.moringaschool.com</p>
-                <label for="phoneNumber">Contact Me :</label>
+                <label>Contact Me :</label>
                 <p>+254708380360</p>
             </address>
         </footer>
