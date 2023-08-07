@@ -70,18 +70,16 @@ hr{
 }
 #formArea{
     top: 30%;
-    left: -10%;
-    width: 100%;
+    width: auto;
     position: relative;
     display: flex;
     justify-content: left;
 }
 #contentArea{
-    margin-right: 40px;
     position: relative;
-    top: 30%;
-    height: 300px;
-    width: 100%;
+    top: 10%;
+    height: auto;
+    width: 25%;
     font-size: 18px;
     font-weight: 600;
     color: rgb(85, 84, 84);
@@ -93,10 +91,10 @@ hr{
 img{
     position: relative;
     top: 10%;
-    left: 30%;
-    height: 500px;
+    left: 10%;
+    height: auto;
     border-radius: 5px;
-    width: 300px;
+    width: 250px;
 }
 .content{
     display: flex;
