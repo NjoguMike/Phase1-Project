@@ -80,7 +80,7 @@ const form = document.getElementById("search").addEventListener('submit',content
 
 
 //Data to Store
-const localDb = "http://localhost:3000/users"
+const localDb = "https://thebiblenotepad.netlify.app/formdata.json"
     
 const formHandler = (event)=>{
     event.preventDefault()
