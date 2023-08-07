@@ -1,7 +1,8 @@
 # Phase1-Project
 
 This Project is named Bible Notepad. Created and owned by Njogu Michael Benson. It is a project in the course of learning Software development with the hope of getting better as the journey continues. Below is also a link to a live site. Hope you enjoy this creation.
-    < Live link to the Website > 
+    https://thebiblenotepad.netlify.app/
+    
 It is a single page application that allows you to fully interact with the Webpage without external redirects.
 Everyhting you need from is in the page and all that you need to do is in the page as well.
 
