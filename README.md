@@ -1,17 +1,19 @@
 # Phase1-Project
 
-This Project is named Bible Notepad.
-It is a single page Application that allows you to fully interact with the Webpage without external redirects.
-Everyhting you nedd from is in the page and all that you need to do is in the page as well.
+This Project is named Bible Notepad. Created and owned by Njogu Michael Benson. It is a project in the course of learning Software development with the hope of getting better as the journey continues. Below is also a link to a live site. Hope you enjoy this creation.
+    < Live link to the Website > 
+It is a single page application that allows you to fully interact with the Webpage without external redirects.
+Everyhting you need from is in the page and all that you need to do is in the page as well.
+
+On landing the Navigation Bar highlights te name of the Page with no links on it. But the following a key features to ineract with:
+    1. A Verse of the Day 
+    2. A Bible Verse Searching Form Area
+    3. A Bible Verse display Area
+    4. Calm relatable image to the content.
+    5. A Form pad that lets you take some notes and store in our servers. 
+    6. A footer displaying COntact information of the Webpage creator.
 
 Functionality of the Page
-On landing the Navigation Bar highlights te name of the Page with no links on it. But the following a key features to ineract with:
-1. A Verse of the Day 
-2. A Bible Verse Searching Form Area
-3. A Bible Verse display Area
-4. Calm relatable image to the content.
-5. A Form pad that lets you take some notes and store in our servers. 
-6. A footer displaying COntact information of the Webpage creator.
 
 1. A Verse of the Day 
     This is a random verse that is different every time you log onto the page. 
