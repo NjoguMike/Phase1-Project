@@ -11,7 +11,7 @@ On landing the Navigation Bar highlights te name of the Page with no links on it
     2. A Bible Verse Searching Form Area
     3. A Bible Verse display Area
     4. Calm relatable image to the content.
-    5. A Form pad that lets you take some notes and store in our servers. 
+    5. A Form pad that lets you take some notes and display. 
     6. A footer displaying COntact information of the Webpage creator.
 
 Functionality of the Page
@@ -28,10 +28,10 @@ Functionality of the Page
 4. Calm relatable image to the content.
     The image just helps to set the mood and improve visual design of the page.
 
-5. A Form pad that lets you take some notes and store in our servers. 
-    The form allows you to take some notes as you study through the verses, and save to our servers. The availability of the saved content will be added soon in our upcoming update.
+5. A Form pad that lets you take some notes and displayes them for you. 
+    The form allows you to take some notes as you study through the verses, and shows it on the page. 
 
-6. A footer displaying COntact information of the Webpage creator.
+6. A footer displaying Contact information of the Webpage creator.
     This is just an address and contact information to reach the creator incase of inquiries.
 
 
