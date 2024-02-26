@@ -9,46 +9,49 @@
         <link rel="stylesheet" href="./Bible.css">
     </head>
     <body>
-      <div id = "main">
+      <div id="main">
         <nav id="navBar">
+            <h1>Bible NotePad</h1>
             <ul>
-                <li>Bible NotePad</li>
+              <li class="active">Home</li>
+              <li>Posts</li>
+              <li>Projects</li>
             </ul>
         </nav>
-        <section id="carousel-container" class="read">
-          <h1 id="dailyVerse">Verse of the Day</h1>
+        <section id="carousel-container">
           <div class="text-card">
-              <p> Romans 8:38-39 ESV </p>
-              <p id="random">
+            <h1 id="dailyVerse">Verse of the Day</h1>
+            <p> Romans 8:38-39 ESV </p>
+            <p id="random">
                   For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.</p>
           </div>
         </section>
         <section class="read">
-            <h2 class="headings">Select your Bible Content</h2>
-            <hr>
             <div class="containers">
               <div id="formArea" class="cards">
-                  <form id="search" class="content">
-                    <label class="name"> Book : <input id="searchinput" class="searchbar" type="text"></label>
-                    <label class="name"> Chapter : <input id="chapter" class="searchbar" type="number"></label>
-                    <label class="name"> Verse : <input id="verse" class="searchbar" type="number"></label>
-                    <input type="submit" class="btn">
-                  </form>
-              </div>
-              <div id="contentArea" class="cards">
-                <p id="bibleContent"></p>
-                <q id="quotedVerse">This is where your Quoted Scripture Verses are displayed</q>
+                <h2 class="headings">Select your Bible Content</h2>
+                <hr/>
+                <form id="search" class="content">
+                  <label class="name"> Book : <input id="searchinput" class="searchbar" type="text"></label>
+                  <label class="name"> Chapter : <input id="chapter" class="searchbar" type="number"></label>
+                  <label class="name"> Verse : <input id="verse" class="searchbar" type="number"></label>
+                  <input type="submit" class="btn">
+                </form>
               </div>
               <div id="img-card">
-              <img src="./Images/daiga-ellaby-h43VqtlnV7U-unsplash.jpg" alt="Pious Image">
+                <img src="./Images/daiga-ellaby-h43VqtlnV7U-unsplash.jpg" alt="Pious Image" />
+                <div id="contentArea" class="cards">
+                  <p id="bibleContent" aria-placeholder="Bible Chapter && Verse"></p>
+                  <q id="quotedVerse" aria-placeholder="This is where your Quoted Scripture Verses are displayed">This is where your Quoted Scripture Verses are displayed</q>
+                </div>
               </div>
             </div>
         </section>
         <section class="read">
-            <h2 class="headings">Write your Thoughts & Take Aways!</h2>
+            <h2 class="headings">Thoughts & Take Aways!</h2>
             <div class="containers">
               <form id="submitForm">
-                <textarea id="formpad" placeholder="Write here!" form="submitForm">TakeAway Notes Here</textarea>
+                <textarea id="formpad" placeholder="Write here!" form="submitForm">Take away Notes Here</textarea>
                 <input type="submit" class="button" value="save">
               </form>
               <div id="notes"><p>Notes 1</p></div>
@@ -57,7 +60,7 @@
         <footer>
             <address>
                 <label>Email Me :</label>
-                <p id="email">michael.njogu1@student.moringaschool.com</p>
+                <p id="email">mikeynjogu.com</p>
                 <label>Contact Me :</label>
                 <p>+254708380360</p>
             </address>
