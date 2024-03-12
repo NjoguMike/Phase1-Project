@@ -33,7 +33,6 @@ body{
         color: whitesmoke;
         height: 100%;
         margin-right: 40px;
-
         font-size: 24px;
 
         li{
@@ -43,10 +42,7 @@ body{
             background-color: rgb(245, 245, 245);
             color: rgb(118, 172, 30) ;
         }
-        li:active{
-            background-color: rgb(245, 245, 245);
-            color: rgb(118, 172, 30) ;
-        }
+
     }
 
 }

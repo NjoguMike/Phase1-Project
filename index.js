@@ -32,7 +32,21 @@ function firstVerse(verseData){
 
 }
 
+const notes_url = "https://biblenotepad.free.beeceptor.com/notes"
+
+function loadNotes(){
+    const intro_note = document.getElementById('intro_notes')
+
+    fetch(`${notes_url}`)
+    .then(resp => resp.json())
+    .then(resp => intro_note.innerText = `${resp[0].note}`)
+    .catch(error => {
+        console.log(error)
+    })
+}
+
 document.addEventListener('DOMContentLoaded',randomVerse())
+document.addEventListener('DOMContentLoaded',loadNotes())
 
 // Content Display
 
@@ -43,7 +57,6 @@ document.addEventListener('DOMContentLoaded',randomVerse())
     const quotedVerse = document.getElementById('quotedVerse')
 
 function searchData(){
-
     const chapterUrl = `https://bible-memory-verse-flashcard.p.rapidapi.com/get_chapter?book_name=${bookName.value}&chapter=${chapter.value}&text_mode=full`
 
  return chapterUrl
@@ -60,12 +73,11 @@ function bookHandler(url){
     })
         .then(response => response.json())
         .then(respData => {
-            console.log(respData)
             bibleContent.innerText = `${respData.book_name} ${respData.chapter[chapter.value].chapter} : ${respData.chapter[verse.value-1].verse_num} `
             quotedVerse.innerText = respData.chapter[verse.value-1].verse_text
         })
         .catch(error => {
-            alert("Server Error!")
+            alert("Sorry cannot display data as requested!")
             console.log(error.message)
         })
 
