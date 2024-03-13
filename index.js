@@ -35,11 +35,16 @@ function firstVerse(verseData){
 const notes_url = "https://biblenotepad.free.beeceptor.com/notes"
 
 function loadNotes(){
+    const note_title = document.getElementById('note_title')
     const intro_note = document.getElementById('intro_notes')
+
 
     fetch(`${notes_url}`)
     .then(resp => resp.json())
-    .then(resp => intro_note.innerText = `${resp[0].note}`)
+    .then(resp => {
+        note_title.innerText = `${resp[0].title}`
+        intro_note.innerText = `${resp[0].note}`
+    })
     .catch(error => {
         console.log(error)
     })

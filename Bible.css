@@ -1,3 +1,7 @@
+:root{
+    --background: #fff;
+}
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -141,32 +145,7 @@ hr{
     flex-direction: column;
     padding: 20px 20px 40px 20px;
 }
-#submitForm{
-    margin: 20px 20px 20px 40px;
-    flex-direction: column;
-    height: auto;
-    width: 400px;
-}
-.read div #notes{
-    background-color: rgba(89, 164, 13, 0.525);
-    margin: 20px 40px 20px 30px;
-    padding: 20px 20px 40px 20px;
-    border-radius: 5px;
-    width: 400px;
-}
-#formpad{
-    color: rgba(52, 52, 52, 0.975);
-    font-size: 16px;
-    border: solid 2.8px rgb(227, 225, 225);
-    box-shadow: 8px 8px 30px 0.1em rgb(154, 152, 152);
-    border-radius: 5px;
-    width: 100%;
-    height: 300px;
-    margin: 60px 20px 30px 10px;
-    padding: 30px 20px ;
-    font-family: Arial, Helvetica, sans-serif;
-    resize: none;
-}
+
 .name{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
@@ -200,32 +179,100 @@ hr{
     border: none;
     background-color: rgba(155, 209, 30, 0.952);
 }
-.button{
-    color: rgb(57, 56, 56);
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 6px;
-    border: none;
-    background-color: rgba(155, 209, 30, 0.952);
+
+.note_taking{
     display: flex;
-    align-items: center;
-    padding: 8px 20px 8px 20px;
-    position: relative;
-    left: 50%;
-    cursor: pointer;
+    flex-direction: column;
+    padding: 65px 30px;
+    width: 100%;
+
+    .notes-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+
+        #submitForm{
+            display: flex;
+            flex-direction: column;
+            padding: 30px 20px ;
+            width: 55%;
+
+            .title{
+                position: relative;
+                height: 30px;
+                padding: 20px 0 0;
+
+                #title-input{
+                    outline: 1.5px solid rgba(155, 209, 30, 0.952);
+                    border: none;
+                    border-radius: 4px;
+                    padding: 10px;
+                    width: 90%;
+                    transition: all 0.3s;
+                }
+
+                #title-input::placeholder{
+                    color: transparent;
+                }
+
+                #title-input:placeholder-shown ~ label{
+                    font-size: 1em;
+                    cursor: text;
+                    top: 28px;
+                }
+
+                label, #title-input:focus~label{
+                    background-color: #fff;
+                    position: absolute;
+                    top: 2px;
+                    padding: 0 8px;
+                    display: block;
+                    left: 10px;
+                    font-size: 1.1em;
+                    transition: all 0.4s;
+                }
+            }
+
+
+            #formpad{
+                color: rgba(52, 52, 52, 0.975);
+                font-size: 16px;
+                border: solid 2.8px rgb(227, 225, 225);
+                box-shadow: 8px 8px 30px 0.1em rgb(154, 152, 152);
+                border-radius: 5px;
+                height: 300px;
+                margin: 30px 0;
+                padding: 30px 20px ;
+                resize: none;
+            }
+
+            .button{
+                width: 75px;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 6px;
+                border: none;
+                background-color: rgba(155, 209, 30, 0.952);
+                padding: 6px 18px;
+                cursor: pointer;
+            }
+            .button:hover{
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        #notes{
+            background-color: rgba(89, 164, 13, 0.525);
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 38%;
+        }
+    }
 }
-.button:hover{
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 6px;
-    border: none;
-    display: flex;
-    align-items: center;
-    padding: 8px 20px 8px 20px;
-    position: relative;
-    left: 50%;
-}
+
 footer{
     margin: -10px -10px;
     padding: 20px 30px 20px 50px;

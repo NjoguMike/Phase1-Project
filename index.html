@@ -46,14 +46,21 @@
               </div>
             </div>
         </section>
-        <section class="read">
-            <h2 class="headings">Thoughts & Take Aways!</h2>
-            <div class="containers">
+        <section class="read note_taking">
+            <h2 class="headings">Thoughts ?</h2>
+            <div class="notes-container">
               <form id="submitForm">
+                <div class="title">
+                  <input id="title-input" placeholder="Notes-Title" />
+                  <label for="title-input">Notes-Title</label>
+                </div>
                 <textarea id="formpad" placeholder="Write some take away notes here!" form="submitForm"></textarea>
-                <input type="submit" class="button" value="save" />
+                <button type="submit" class="button" value="save"> save </button>
               </form>
-              <div id="notes"><p id="intro_notes"></p></div>
+              <div id="notes">
+                <h3 id="note_title"></h3>
+                <p id="intro_notes"></p>
+              </div>
             </div>
         </section>
         <footer>
